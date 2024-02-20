@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Input from "./components/input";
 import Tip from "./components/tip";
+import Result from "./components/result";
 import { BiDollar, BiSolidUser } from "react-icons/bi";
 import "./App.css";
 
@@ -23,6 +24,7 @@ function App() {
           value={people}
           onChange={setPeople}
         />
+        <Result bill={bill} tip={tip} people={people} />
       </div>
     </div>
   );

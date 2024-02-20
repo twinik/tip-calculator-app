@@ -11,6 +11,7 @@ export default {
       veryLightGrayishCyan: "hsl(189, 41%, 97%)",
       white: "hsl(0, 0%, 100%)",
       strongCyan: "hsl(172, 67%, 45%)",
+      errorRed: "hsl(0, 100%, 74%)",
     },
   },
   plugins: [],
