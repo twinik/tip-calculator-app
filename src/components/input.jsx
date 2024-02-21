@@ -24,9 +24,9 @@ const Input = ({ label, icon: Icon, value, onChange }) => {
   };
 
   return (
-    <div className="text-darkGrayishCyan">
+    <div className="">
       <div className="flex flex-row justify-between">
-        <p className="text-lg font-bold">{label}</p>
+        <p className="text-lg font-bold text-darkGrayishCyan">{label}</p>
         {peopleError && (
           <p className="text-errorRed text-xl font-bold">Can&apos;t be zero</p>
         )}
@@ -36,8 +36,8 @@ const Input = ({ label, icon: Icon, value, onChange }) => {
           {Icon && <Icon size={22} className="mt-2" />}
         </span>
         <input
-          className={`w-full bg-veryLightGrayishCyan placeholder:text-grayishCyan text-right font-extrabold text-3xl focus:border-strongCyan p-2 rounded-md mt-2 ${
-            peopleError ? "border-errorRed" : ""
+          className={`w-full bg-veryLightGrayishCyan text-veryDarkCyan placeholder:text-grayishCyan text-right font-extrabold text-3xl focus:border-strongCyan p-2 rounded-md mt-2 ${
+            peopleError && "border-errorRed !important"
           }`}
           type="number"
           inputMode="numeric"
